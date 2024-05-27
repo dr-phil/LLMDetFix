@@ -85,7 +85,7 @@ def perplexity(text_set_token_ids, n_grams_probability, vocab_size):
 
 
 def detect(text):
-     """
+    """
     The `detect()` is used to determine whether the given text comes from GPT-2, LLaMA, BART, OPT, UniLM, T5, Bloom, GPT-neo, or Human-write.
     """
 
