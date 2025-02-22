@@ -22,4 +22,4 @@ __version__ = "1.1.0"
 
 from .detector import load_probability
 from .detector import detect
-from .extender import extend
+# from .extender import extend
