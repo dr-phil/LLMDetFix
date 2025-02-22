@@ -111,7 +111,7 @@ def detect(text):
     model_information = [{"model_name": "gpt2", "vocab_size": 50265, "model_probability": "gpt2"},
                          {"model_name": "facebook/opt-1.3b", "vocab_size": 50257, "model_probability": "opt"},
                          {"model_name": "microsoft/unilm-base-cased", "vocab_size": 28996, "model_probability": "unilm"},
-                         {"model_name": "baffo32/decapoda-research-llama-7B-hf", "vocab_size": 32000, "model_probability": "llama"},
+                         # {"model_name": "baffo32/decapoda-research-llama-7B-hf", "vocab_size": 32000, "model_probability": "llama"},
                          {"model_name": "facebook/bart-base", "vocab_size": 50265, "model_probability": "bart"},
                          {"model_name": "google/flan-t5-base", "vocab_size": 32128, "model_probability": "t5"},
                          {"model_name": "bigscience/bloom-560m", "vocab_size": 250880, "model_probability": "bloom"},
