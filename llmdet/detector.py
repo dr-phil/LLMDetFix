@@ -114,7 +114,7 @@ def detect(text):
                          {"model_name": "baffo32/decapoda-research-llama-7B-hf", "vocab_size": 32000, "model_probability": "llama"},
                          {"model_name": "facebook/bart-base", "vocab_size": 50265, "model_probability": "bart"},
                          {"model_name": "google/flan-t5-base", "vocab_size": 32128, "model_probability": "t5"},
-                         {"model_name": "bigscience/bloom-560m", "vocab_size": 250880, "model_probability": "bloom"},
+                         {"model_name": "deepseek-ai/DeepSeek-R1", "vocab_size": 128000, "model_probability": "deepseek"},
                          {"model_name": "EleutherAI/gpt-neo-2.7B", "vocab_size": 50257, "model_probability": "neo"},
                          {"model_name": "lmsys/vicuna-7b-delta-v1.1", "vocab_size": 32000, "model_probability": "vicuna"},
                          {"model_name": "gpt2-large", "vocab_size": 50265, "model_probability": "gpt2_large"},
