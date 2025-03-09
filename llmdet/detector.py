@@ -18,7 +18,7 @@ def load_probability():
     # And subsequently caching it in the local cache for future reference.
     dm = datasets.DownloadManager()
     files = dm.download_and_extract('https://huggingface.co/datasets/TryMore/n_grams_probability/resolve/main/n-grams_probability.tar.gz')
-    model = ["gpt2", "opt", "unilm", "llama", "bart", "t5", "bloom", "neo", "vicuna" , "gpt2_large", "opt_3b"]
+    model = ["gpt2", "opt", "unilm", "llama", "bart", "t5", "deepseek", "neo", "vicuna" , "gpt2_large", "opt_3b"]
     global_vars = globals()
     for item in model:
         n_grams = np.load(f'{files}/npz/{item}.npz', allow_pickle=True)
