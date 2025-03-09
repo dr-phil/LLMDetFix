@@ -18,7 +18,7 @@ def load_probability():
     # And subsequently caching it in the local cache for future reference.
     dm = datasets.DownloadManager()
     files = dm.download_and_extract('https://huggingface.co/datasets/TryMore/n_grams_probability/resolve/main/n-grams_probability.tar.gz')
-    model = ["gpt2", "opt", "unilm", "llama", "bart", "t5", "deepseek", "neo", "vicuna" , "gpt2_large", "opt_3b"]
+    model = ["gpt2", "opt", "unilm", "llama", "bart", "t5", "bloom", "neo", "vicuna" , "gpt2_large", "opt_3b"]
     global_vars = globals()
     for item in model:
         n_grams = np.load(f'{files}/npz/{item}.npz', allow_pickle=True)
@@ -114,7 +114,7 @@ def detect(text):
                          {"model_name": "baffo32/decapoda-research-llama-7B-hf", "vocab_size": 32000, "model_probability": "llama"},
                          {"model_name": "facebook/bart-base", "vocab_size": 50265, "model_probability": "bart"},
                          {"model_name": "google/flan-t5-base", "vocab_size": 32128, "model_probability": "t5"},
-                         {"model_name": "deepseek-ai/DeepSeek-R1", "vocab_size": 128000, "model_probability": "deepseek"},
+                         {"model_name": "bigscience/bloom-560m, "vocab_size": 128000, "model_probability": "bloom"},
                          {"model_name": "EleutherAI/gpt-neo-2.7B", "vocab_size": 50257, "model_probability": "neo"},
                          {"model_name": "lmsys/vicuna-7b-delta-v1.1", "vocab_size": 32000, "model_probability": "vicuna"},
                          {"model_name": "gpt2-large", "vocab_size": 50265, "model_probability": "gpt2_large"},
